@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_1"
+    tools:context=".WelcomePageActivity">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/img"
+        android:src="@drawable/img_2"
+        android:scaleType="centerCrop"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:outlineAmbientShadowColor="@color/black"
+        app:shapeAppearanceOverlay="@style/CircleImageView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wlcmtxt"
+        android:text="Welcome to RMS"
+        app:layout_constraintTop_toBottomOf="@+id/img"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manage Your Business Revenue Efficiently"
+        android:id="@+id/subtitle"
+        app:layout_constraintTop_toBottomOf="@+id/wlcmtxt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/subtitle"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        ></TextView>
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+
+        app:layout_constraintTop_toBottomOf="@id/subtitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_marginTop="34dp"
+
+        android:paddingVertical="12dp"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/signBtn"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+
+        app:layout_constraintTop_toBottomOf="@id/loginBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_marginTop="16dp"
+
+        android:paddingVertical="12dp"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Track Analyze And Grow Your Business Revenue"
+        android:id="@+id/subtitle1"
+        app:layout_constraintTop_toBottomOf="@+id/signBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/subtitle"
+        android:textSize="18sp"
+        android:layout_margin="30dp"
+        android:padding="20dp"
+        android:textAlignment="center"
+        ></TextView>
+</androidx.constraintlayout.widget.ConstraintLayout>
