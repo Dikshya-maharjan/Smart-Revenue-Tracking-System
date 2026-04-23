@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RevenueManagementSystem">
         <activity
+            android:name=".ViewTransactionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddTransactionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeScreenActivity"
+            android:exported="false" />
+        <activity
             android:name=".LoginPageActivity"
             android:exported="false" />
         <activity

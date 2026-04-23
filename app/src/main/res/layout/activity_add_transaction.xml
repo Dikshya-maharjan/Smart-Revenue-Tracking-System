@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- TOP BAR (same style as dashboard) -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@color/txtBg"
+        android:text="Add Transaction"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- AMOUNT -->
+    <TextView
+        android:id="@+id/tvAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/etAmount"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:hint="Enter amount"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/tvAmount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- TYPE -->
+    <TextView
+        android:id="@+id/tvType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transaction Type"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/etAmount"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="15dp"/>
+
+    <!-- SPINNER -->
+    <Spinner
+        android:id="@+id/spinnerType"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        app:layout_constraintTop_toBottomOf="@id/tvType"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- DATE -->
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/spinnerType"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:id="@+id/etDate"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:hint="Select date"
+        android:focusable="false"
+        app:layout_constraintTop_toBottomOf="@id/tvDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- NOTE -->
+    <TextView
+        android:id="@+id/tvNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Note"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/etDate"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:id="@+id/etNote"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:hint="Optional note"
+        app:layout_constraintTop_toBottomOf="@id/tvNote"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- SAVE BUTTON (same feel as dashboard cards) -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnSave"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        app:cardCornerRadius="12dp"
+        android:backgroundTint="@color/add"
+        app:layout_constraintTop_toBottomOf="@id/etNote"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="SAVE TRANSACTION"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"/>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

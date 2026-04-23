@@ -4,5 +4,11 @@
     <color name="white">#FFFFFFFF</color>
     <color name="wlcmBg">#D7E5F0</color>
     <color name="subtitle">#999999</color>
+    <color name="txtBg">#000080</color>
+    <color name="add">#008000 </color>
+    <color name="remove">#D30000</color>
+    <color name="profit">#0a74b6</color>
+    <color name="view">#F28C28 </color>
+
 
 </resources>

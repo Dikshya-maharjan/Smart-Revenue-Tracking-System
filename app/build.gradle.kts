@@ -42,4 +42,5 @@ dependencies {
     androidTestImplementation(libs.espresso.core)
     implementation("com.google.android.material:material:1.11.0")
     implementation("androidx.activity:activity:1.8.0")
+    implementation("com.google.android.material:material:1.11.0")
 }
