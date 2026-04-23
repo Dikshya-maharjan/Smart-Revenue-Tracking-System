@@ -1,1 +1,1 @@
-# InventoryManagementSystem
+# Smart Revenue Tracking System
